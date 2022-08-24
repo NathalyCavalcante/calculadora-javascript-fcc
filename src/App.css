@@ -1,38 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  }
+  
+body {
+  background-color: #b6e2dd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.calculator {
+  height: 500px;
+  max-width: 460px;
+  border-radius: 10px;
+  background-color: #c8ddbb;
+  box-shadow: 4px 4px 8px #88a9a5;
+}
+
+.output {
+  height: 90px;
+  background-color: #e9e5af;
+  border-radius: 10px;  
+}
+
+.keys {
+  gap: 7px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.keys button:first-child {
+  color: #ffffff;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  background-color: #fbb39d;
+}
+
+.keys button:nth-child(2) {
+  color: #ffffff;
+  background-color: #fbc99d;
+}
+
+.keys button:nth-child(3) {
+  color: #ffffff;
+  background-color: #fbc99d;
+}
+
+.keys button:nth-child(15) {
+  color: #ffffff;
+  grid-row: 4 / 6;
+  grid-column: 4 / 4;
+  background-color: #fba09d;
+}
+
+.keys button:nth-child(7) {
+  color: #ffffff;
+  background-color: #fbc99d;
+}
+
+.keys button:nth-child(11) {
+  color: #ffffff;
+  background-color: #fbc99d;
+}
+
+.keys button:nth-child(16) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.input {
+  color: #fff;
+  height: 40px;
+  display: block;
+  font-size: 40px;
+  text-align: right;
+  padding-right: 10px; 
+  
+}
+.result {
+  color: #8fbc75;
+  height: 40px;
+  display: block;
+  font-size: 30px;
+  text-align: right;
+  padding-right: 10px;     
+}
+
+button {
+  border: none;
+  font-size: 28px;
+  min-width: 80px;
+  min-height: 65px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fbdf9d;
+}
+button:hover {
+  color: white;
+  background-color: #e9e5af;
+}
+
+h2 {
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-family: 'Shadows Into Light', regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #326f68
 }
